@@ -31,7 +31,7 @@ this library excute a node script as a service and not electron so we need to pa
 
     }
   ],
--  ![Image](./images/extra-resources.PNG "a title") 
+-  ![Image](./images/extra-resources1.PNG "a title") 
 -  in scripts tag change this :
  ```sh
  "scripts": {
