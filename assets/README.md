@@ -15,7 +15,7 @@ this library excute a node script as a service and not electron so we need to pa
 - ![Image](.\images\node-src.PNG "a title")
 - go to package.json file and go to the build section and add this 
 - ```sh
-  "extraResources" : [{
+   "extraResources" : [{
       "from" : "./src/node",
       "to" : "node"
 
@@ -23,7 +23,14 @@ this library excute a node script as a service and not electron so we need to pa
       "from" : "./src/service.js",
       "to" : "service.js"
 
-    }]
+    } , 
+  
+    {
+      "from" : "./node_modules",
+      "to" : "./node_modules"
+
+    }
+  ],
 -  ![Image](./images/extra-resources.PNG "a title") 
 -  in scripts tag change this :
  ```sh
